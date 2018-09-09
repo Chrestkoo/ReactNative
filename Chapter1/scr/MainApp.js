@@ -7,7 +7,7 @@ const MainApp = () => {
       <View style={styles.container}>
         <View style={styles.innerContainer} />
         <Text style={styles.title}>
-          <Text style={styles.subtitle}>Playing:</Text> {name}
+          <Text style={styles.subtitle}>Playing this video:</Text> {name}
         </Text>
 </View> );
 };
