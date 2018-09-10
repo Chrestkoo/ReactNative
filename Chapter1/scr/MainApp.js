@@ -6,21 +6,15 @@ const hdIcon = require('./images/hd-sign.png');
 const fullScreenIcon = require('./images/full-screen.png');
 const remoteImage = { uri: 'https://s3.amazonaws.com/crysfel/public/book/new-york.jpg' };
 
+const name = "Testing on React-Navigation";
 const MainApp = () => {
     return (
-        <Image source={remoteImage} style={styles.fullscreen}>
-            <View style={styles.container}>
-                <Image source={playIcon} style={styles.icon} />
-                <Image source={volumeIcon} style={styles.icon} />
-                <View style={styles.progress}>
-                    <View style={styles.progressBar} />
-                </View>
-                <Image source={hdIcon} style={styles.icon} />
-                <Image source={fullScreenIcon} style={styles.icon} />
-            </View> 
-        </Image>
-        
-    );
+      <View style={styles.container}>
+        <View style={styles.innerContainer} />
+        <Text style={styles.title}>
+          <Text style={styles.subtitle}>Playing:</Text> {name}
+        </Text>
+</View> );
 };
 
 
